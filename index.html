@@ -1,83 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beti & Maks — 28.08.2026</title>
+  <title>Beti & Maks — 28 sierpnia 2026</title>
+
+  <!-- Tailwind CSS (działa lokalnie i na GitHub Pages) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Czcionka z ozdobnymi akcentami -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
   <style>
-    :root {
-      --accent: #f97d4e; /* grejpfrut/pomarańczowy */
+    html {
+      scroll-behavior: smooth;
     }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #fffaf6;
-      color: #111;
+      font-family: "Inter", sans-serif;
+      background-color: #fffaf7;
+      color: #1a1a1a;
     }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
+    h1, h2 {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.02em;
     }
   </style>
 </head>
 
-<body class="flex flex-col min-h-screen">
 
-  <!-- HERO -->
-  <header class="text-center py-28 bg-white">
-    <h1 class="text-5xl md:text-6xl font-semibold mb-2 tracking-tight">Beti & Maks</h1>
-    <p class="text-lg text-neutral-600">28 sierpnia 2026 · Palermo Boutique Events, Warszawa</p>
-  </header>
+  <body class="text-center">
+    <!-- Hero -->
+    <section class="py-24 bg-gradient-to-b from-[#fffaf7] to-[#fff2ec]">
+      <div class="max-w-3xl mx-auto px-4">
+        <img
+          src="assets/photo-placeholder.jpg"
+          alt="Beti & Maks"
+          class="mx-auto mb-8 rounded-2xl shadow-md object-cover w-full max-w-lg"
+        />
+        <h1 class="text-4xl md:text-5xl font-light mb-2 tracking-wide">
+          Beti & Maks
+        </h1>
+        <p class="text-lg text-gray-700">28 sierpnia 2026 · Warszawa</p>
+        <p class="text-sm uppercase tracking-widest text-gray-500 mt-2">
+          Palermo Boutique Events
+        </p>
+      </div>
+    </section>
 
-  <!-- INTRO -->
-  <section class="max-w-3xl mx-auto text-center px-6 py-20">
-    <h2 class="text-2xl font-semibold mb-6 text-[var(--accent)]">Nasze Wesele</h2>
-    <p class="text-neutral-700 leading-relaxed">
-      Zapraszamy Was do wspólnego świętowania w kameralnej, włoskiej atmosferze — pełnej światła, rozmów i muzyki.
-      Bez oczepin, bez formalności, po prostu razem.
-    </p>
-  </section>
+    <!-- Miejsce -->
+    <section id="miejsce" class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-medium mb-6">Miejsce</h2>
+        <p class="text-gray-700 mb-8">
+          Ceremonia i przyjęcie odbędą się w
+          <span class="font-semibold">Palermo Boutique Events</span> w Warszawie.
+          Cieszymy się, że spędzimy ten dzień w otoczeniu bliskich w miejscu,
+          które idealnie oddaje włoski klimat i nasz styl.
+        </p>
+        <a
+          href="https://maps.app.goo.gl/Y8nSk9C7W2tH2t1H8"
+          target="_blank"
+          class="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+        >
+          📍 Zobacz na mapie
+        </a>
+      </div>
+    </section>
 
-  <!-- PLAN DNIA -->
-  <section class="bg-[var(--accent)]/5 py-20 text-center">
-    <h2 class="text-2xl font-semibold mb-6">Plan Dnia</h2>
-    <div class="space-y-2 text-neutral-700">
-      <p><strong>16:00</strong> · Ceremonia humanistyczna</p>
-      <p><strong>17:00</strong> · Aperitivo i kolacja</p>
-      <p><strong>20:00</strong> · Tańce i rozmowy do późna</p>
-    </div>
-  </section>
+    <!-- Dress Code -->
+    <section id="dresscode" class="py-20 bg-[#fff2ec]">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-medium mb-6">Dress code</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Chcemy, byście czuli się swobodnie i elegancko. Inspiracją jest
+          <span class="font-semibold">włoski minimalizm</span> — lekkie tkaniny,
+          stonowane kolory, z akcentami w naszych barwach:
+          <span class="text-orange-500 font-medium">pomarańczowym</span>,
+          <span class="text-rose-500 font-medium">grejpfrutowym</span> i
+          <span class="text-gray-900 font-medium">czerni</span>.
+        </p>
+      </div>
+    </section>
 
-  <!-- RSVP -->
-  <section id="rsvp" class="max-w-3xl mx-auto text-center px-6 py-24">
-    <h2 class="text-2xl font-semibold mb-6">Potwierdzenie obecności</h2>
-    <p class="text-neutral-700 mb-8">
-      Prosimy o odpowiedź do <strong>15 lipca 2026</strong>.
-    </p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLcZ95Fop2ObNupommMdlPZXapHnse8e-ZnYK4zxBIvcN3IQ/viewform?usp=sharing&ouid=106366331940732255806" target="_blank"
-       class="inline-block bg-black text-white px-8 py-3 rounded-full hover:opacity-80 transition">
-      Wypełnij formularz RSVP
-    </a>
-  </section>
+    <!-- Prezenty -->
+    <section id="prezenty" class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-medium mb-6">Prezenty</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Wasza obecność to dla nas największy prezent ❤️  
+          Jeśli jednak chcielibyście symbolicznie się do czegoś przyczynić,
+          marzymy o wspólnej podróży poślubnej.  
+          Koperta z uśmiechem będzie w sam raz.
+        </p>
+      </div>
+    </section>
 
-  <!-- KONTAKT -->
-  <section class="bg-black text-white py-20 text-center">
-    <h2 class="text-2xl font-semibold mb-6">Kontakt</h2>
-    <p class="text-neutral-200">
-      W razie pytań możecie napisać do nas:<br>
-      <a href="mailto:beata.adrianna@gmail.com" class="underline hover:text-[var(--accent)] transition">
-        beata.adrianna@gmail.com
-      </a><br>
-      <a href="mailto:maksymilianmaj@gmail.com" class="underline hover:text-[var(--accent)] transition">
-        maksymilianmaj@gmail.com
-      </a>
-    </p>
-  </section>
+    <!-- RSVP -->
+    <section id="rsvp" class="py-20 bg-[#fff2ec]">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-medium mb-6">Potwierdzenie obecności</h2>
+        <p class="text-gray-700 mb-6">
+          Prosimy o wypełnienie krótkiej ankiety do 1 czerwca 2026 r.
+        </p>
+        <a
+          href="https://forms.gle/qRvozRaGNDDQ1YfaA"
+          target="_blank"
+          class="inline-block bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition"
+        >
+          Wypełnij formularz RSVP
+        </a>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center text-sm text-neutral-500 py-6">
-    © 2026 Beti & Maks Wedding
-  </footer>
-
-</body>
+    <!-- Stopka -->
+    <footer class="py-10 text-sm text-gray-500 bg-white">
+      <p>© 2026 Beti & Maks Wedding</p>
+    </footer>
+  </body>
 </html>
