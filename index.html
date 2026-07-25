@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beti & Maks — 28 sierpnia 2026</title>
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Beti & Maks — 28 sierpnia 2026" />
+  <meta property="og:description" content="Zapraszamy na nasze wesele w Palermo Boutique Events w Warszawie." />
+  <meta property="og:image" content="https://maksymilian-m.github.io/beti-maks-wedding/assets/beti-maks-taco.jpg" />
+  <meta property="og:type" content="website" />
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,6 +32,38 @@
     h1, h2 {
       font-family: "Playfair Display", serif;
       letter-spacing: 0.02em;
+    }
+
+    /* ── Timeline ─────────────────────────────── */
+    .timeline-time {
+      font-family: "Playfair Display", serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      color: #6b6560;
+      min-width: 3.5rem;
+      line-height: 1;
+    }
+    .timeline-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #c4b5a5;
+      flex-shrink: 0;
+      margin-top: 0.35rem;
+    }
+    .timeline-row + .timeline-row {
+      border-top: 1px solid #ede8e3;
+    }
+
+    /* ── Menu rozwijane ──────────────────── */
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details > summary::marker {
+      display: none;
     }
   </style>
 </head>
@@ -50,6 +88,22 @@
       </div>
     </section>
 
+    <!-- Witajcie -->
+    <section class="py-20">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-2xl font-medium mb-6">Witajcie</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Bardzo się cieszymy, że będziecie z nami w tym wyjątkowym dniu.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          Przygotowaliśmy kilka praktycznych informacji, które pomogą Wam zaplanować wspólne świętowanie.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          Do zobaczenia w Palermo!
+        </p>
+      </div>
+    </section>
+
     <!-- Miejsce -->
     <section id="miejsce" class="py-20 bg-white">
       <div class="max-w-3xl mx-auto px-6">
@@ -65,7 +119,7 @@
           target="_blank"
           class="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
         >
-          📍 Zobacz na mapie
+          Zobacz na mapie
         </a>
       </div>
     </section>
@@ -77,7 +131,8 @@
         <p class="text-gray-700 leading-relaxed">
           Chcemy, byście czuli się swobodnie i elegancko. Inspiracją jest
           <span class="font-semibold">włoski minimalizm</span> — lekkie tkaniny,
-          stonowane kolory, i zwiewne kroje idealne do tańca w upalną sierpniową noc 💃 🕺
+          stonowane kolory, i zwiewne kroje idealne do tańca w upalną sierpniową noc.
+        </p>
       </div>
     </section>
 
@@ -86,10 +141,13 @@
       <div class="max-w-3xl mx-auto px-6">
         <h2 class="text-2xl font-medium mb-6">Prezenty</h2>
         <p class="text-gray-700 leading-relaxed">
-          Wasza obecność to dla nas największy prezent ❤️ <br>
-          Jeśli jednak chcielibyście nas czymś obdarować, to zamiast kwiatów prosimy o
-          książkę lub butelkę dobrego wina. <br>
-          Będziemy również wdzięczni o dołożenie cegiełki do naszej wymarzonej podróży poślubnej na Bali 🌴🧘🏻🏄🏻
+          Wasza obecność to dla nas największy prezent.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          Jeśli jednak chcielibyście nas czymś obdarować, to zamiast kwiatów prosimy o książkę lub butelkę dobrego wina.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          Będziemy też wdzięczni za każdą cegiełkę do podróży poślubnej — lecimy na Bali uczyć się surfować, uprawiać jogę, medytować i chillować na łonie natury.
         </p>
       </div>
     </section>
@@ -108,6 +166,194 @@
         >
           Wypełnij formularz RSVP
         </a>
+      </div>
+    </section>
+
+    <!-- Program dnia -->
+    <section id="program" class="py-20 bg-white">
+      <div class="max-w-2xl mx-auto px-6">
+
+        <h2 class="text-2xl font-medium mb-2">Program dnia</h2>
+        <p class="text-sm uppercase tracking-widest text-gray-400 mb-14">28 sierpnia 2026</p>
+
+        <ol class="space-y-0">
+
+          <!-- 16:30 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">16:30</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Zbieramy się</p>
+              <p class="text-sm text-gray-400 mt-1">Prosimy o przybycie przed ceremonią</p>
+            </div>
+          </li>
+
+          <!-- 17:00 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">17:00</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Ceremonia humanistyczna</p>
+            </div>
+          </li>
+
+          <!-- 17:30 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">17:30</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Toast, cocktail i życzenia</p>
+              <p class="text-sm text-gray-400 mt-1">Finger foody na dobry początek</p>
+            </div>
+          </li>
+
+          <!-- 19:00 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">19:00</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left w-full">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Kolacja weselna</p>
+
+              <details class="mt-3">
+                <summary class="text-sm text-gray-400 cursor-pointer hover:text-[#c4704a] transition-colors select-none inline-flex items-center gap-1">
+                  <span class="details-label-closed">Zobacz menu</span>
+                  <span class="text-xs">&#8595;</span>
+                </summary>
+
+
+                <div class="mt-5 pt-5 border-t border-[#ede8e3] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+
+                  <!-- Nagłówki kolumn -->
+                  <p class="text-xs uppercase tracking-widest text-gray-400">Menu wegetariańskie</p>
+                  <p class="text-xs uppercase tracking-widest text-gray-400 hidden sm:block">Menu mięsne</p>
+
+                  <!-- Przystawka -->
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Wegetariańskie</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Przystawka</p>
+                    <p class="text-sm text-gray-500 mt-1">Dziki brokuł / sos holenderski / grana padano</p>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Mięsne</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Przystawka</p>
+                    <p class="text-sm text-gray-500 mt-1">Tatar wołowy z owocami kapara / krem truflowy</p>
+                  </div>
+
+                  <!-- Zupa -->
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Wegetariańskie</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Zupa</p>
+                    <p class="text-sm text-gray-500 mt-1">Toskański chłodnik z pomidorów i pomarańczy moro / sorbet bazyliowy</p>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Mięsne</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Zupa</p>
+                    <p class="text-sm text-gray-500 mt-1">Rosół z perliczki / ziołowe kluseczki z parmezanu</p>
+                  </div>
+
+                  <!-- Danie główne -->
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Wegetariańskie</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Danie główne</p>
+                    <p class="text-sm text-gray-500 mt-1">Gnocchi w emulsji parmezanowej / trufla</p>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Mięsne</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Danie główne</p>
+                    <p class="text-sm text-gray-500 mt-1">Pierś z kaczki / gratin ziemniaczane / pecorino romano / sos porzeczkowo-rozmarynowy</p>
+                  </div>
+
+                  <!-- Deser -->
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Wegetariańskie</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Deser</p>
+                    <p class="text-sm text-gray-500 mt-1">Tiramisu</p>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-300 sm:hidden mb-1">Mięsne</p>
+                    <p class="text-sm italic text-[#1a1a1a]">Deser</p>
+                    <p class="text-sm text-gray-500 mt-1">Tiramisu</p>
+                  </div>
+
+                </div>
+
+              </details>
+
+            </div>
+          </li>
+
+          <!-- 20:30 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">20:30</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Otwieramy parkiet</p>
+            </div>
+          </li>
+
+          <!-- 21:45 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">21:45</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Ekspresowa budka zdjęciowa na parkiecie</p>
+            </div>
+          </li>
+
+          <!-- 22:00 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">22:00</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Quiz z nagrodami i ciepły bufet</p>
+            </div>
+          </li>
+
+          <!-- 24:15 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">24:15</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Zabawy, tańce i śpiewanie do świtu</p>
+            </div>
+          </li>
+
+          <!-- 04:00 -->
+          <li class="timeline-row flex items-start gap-6 py-7">
+            <span class="timeline-time pt-0.5">04:00</span>
+            <span class="timeline-dot"></span>
+            <div class="text-left">
+              <p class="text-base font-medium text-[#1a1a1a] leading-snug">Arrivederci.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-20 bg-[#fff2ec]">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-2xl font-medium mb-2">Kontakt</h2>
+        <p class="text-sm uppercase tracking-widest text-gray-400 mb-12">Jesteśmy do dyspozycji</p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-10 sm:gap-20">
+
+          <div>
+            <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Beti</p>
+            <a href="tel:+48885225888" class="text-lg font-medium text-[#1a1a1a] hover:text-[#c4704a] transition-colors">
+              +48 885 225 888
+            </a>
+          </div>
+
+          <div>
+            <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Maks</p>
+            <a href="tel:+48660408763" class="text-lg font-medium text-[#1a1a1a] hover:text-[#c4704a] transition-colors">
+              +48 660 408 763
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
 
